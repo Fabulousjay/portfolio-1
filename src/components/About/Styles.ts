@@ -51,6 +51,7 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down('sm')]: {
 			fontSize: theme.spacing(1.5),
 			gap: 10,
+			justifyContent: 'center',
 		},
 	},
 }));
