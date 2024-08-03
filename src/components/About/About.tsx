@@ -20,7 +20,7 @@ const About = () => {
 					<p>{description.topParagraph}</p>
 					<p>{description.bottomParagraph}</p>
 					<div className={darkMode ? classes.btnGroup : classes.btnGroup}>
-						<LightButton text="talk" />
+						<LightButton text="Let's talk" />
 						<DarkButton text="View resume" />
 					</div>
 				</div>
