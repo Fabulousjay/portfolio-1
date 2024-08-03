@@ -19,7 +19,7 @@ const About = () => {
 					style={{ fontWeight: 400 }}>
 					<p>{description.topParagraph}</p>
 					<p>{description.bottomParagraph}</p>
-					<div className={darkMode ? classes.btnGroup : classes.btnGroup}>
+					<div className={classes.btnGroup}>
 						<LightButton text="Let's talk" />
 						<DarkButton text="View resume" />
 					</div>

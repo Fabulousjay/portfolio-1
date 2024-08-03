@@ -48,7 +48,6 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 		display: 'flex',
 		gap: 20,
 		color: theme.palette.primary.dark,
-		background: theme.palette.primary.light,
 		[theme.breakpoints.down('sm')]: {
 			fontSize: theme.spacing(1.5),
 			gap: 10,
