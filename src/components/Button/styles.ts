@@ -1,5 +1,8 @@
 /** @format */
 
+import { lightTheme } from './../../theme';
+/** @format */
+
 import { Theme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
@@ -21,6 +24,8 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 		fontSize: theme.spacing(2),
 		fontWeight: theme.typography.fontWeightBold,
 		cursor: 'pointer',
+		color: theme.palette.primary.light,
+		background: theme.palette.primary.dark,
 
 		'&:hover': {
 			color: 'black',
@@ -40,11 +45,10 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 		fontFamily: theme.design.font.openSans,
 		fontSize: theme.spacing(2),
 		fontWeight: theme.typography.fontWeightBold,
+		color: theme.palette.primary.dark,
+		background: theme.palette.primary.light,
 
-		'&:hover': {
-			color: theme.design.ayo.waz_white,
-			background: theme.design.ayo.waz_black,
-		},
+		'&:hover': {},
 		[theme.breakpoints.down('sm')]: {
 			padding: theme.spacing(1, 3),
 		},

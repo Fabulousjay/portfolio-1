@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 const LightButton = (props: any) => {
 	const classes = useButtonStyles();
-	const darkMode = useThemeContext();
+	const { darkMode } = useThemeContext();
 
 	return (
 		<div className={classes.root}>
@@ -22,7 +22,7 @@ export default LightButton;
 export const DarkButton = (props: any) => {
 	const classes = useButtonStyles();
 
-	const darkMode = useThemeContext();
+	const { darkMode } = useThemeContext();
 
 	return (
 		<div className={classes.root}>

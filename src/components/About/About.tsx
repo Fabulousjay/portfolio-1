@@ -4,9 +4,11 @@ import { useAboutStyles } from './Styles';
 import { description } from './Data';
 import { DarkButton } from '../Button/Button';
 import LightButton from '../Button/Button';
+import { useThemeContext } from '../../contexts/ThemeContext';
 
 const About = () => {
 	const classes = useAboutStyles();
+	const { darkMode } = useThemeContext();
 
 	return (
 		<div className={classes.root}>
@@ -17,8 +19,8 @@ const About = () => {
 					style={{ fontWeight: 400 }}>
 					<p>{description.topParagraph}</p>
 					<p>{description.bottomParagraph}</p>
-					<div className={classes.btnGroup}>
-						<LightButton text="Let's talk" />
+					<div className={darkMode ? classes.btnGroup : classes.btnGroup}>
+						<LightButton text="talk" />
 						<DarkButton text="View resume" />
 					</div>
 				</div>
