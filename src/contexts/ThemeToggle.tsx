@@ -32,7 +32,7 @@ const ThemeToggle: React.FC = () => {
 				) : (
 					<LightModeIcon
 						style={{
-							color: darkMode ? '#121212' : '#ffffff',
+							color: darkMode ? '#ffffff' : '#121212',
 							borderRadius: '50%',
 							fontSize: '20px',
 						}}
