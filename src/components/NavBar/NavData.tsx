@@ -5,22 +5,22 @@ import { NavTypes } from './types';
 export const link: NavTypes[] = [
 	{
 		id: 1,
-		url: '/',
+		url: '#',
 		title: 'Home',
 	},
 	{
 		id: 2,
-		url: 'about',
+		url: '#about',
 		title: 'About',
 	},
 	{
 		id: 3,
-		url: 'work',
+		url: '#work',
 		title: 'Work',
 	},
 	{
 		id: 4,
-		url: 'contact',
+		url: '#contact',
 		title: 'Contact',
 	},
 ];

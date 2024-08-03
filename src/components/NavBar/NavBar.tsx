@@ -2,12 +2,11 @@
 
 import { useNavStyles } from './styles';
 import { link } from './NavData';
-import { FC, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { Close, DragHandle } from '@mui/icons-material';
 import { NavTypes } from './types';
 import Themetoggle from '../../contexts/ThemeToggle';
 import Clock from '../Clock/Clock';
-import { Link } from 'react-router-dom';
 import { useThemeContext } from '../../contexts/ThemeContext';
 
 const NavBar: FC<NavTypes> = () => {
@@ -23,10 +22,16 @@ const NavBar: FC<NavTypes> = () => {
 		setShowLinks(!showLinks);
 	};
 
+	useEffect(() => {
+		document.documentElement.style.scrollBehavior = 'smooth';
+		return () => {
+			document.documentElement.style.scrollBehavior = 'auto';
+		};
+	}, []);
+
 	return (
 		<div className={classes.root}>
-			<Link
-				to="/"
+			<a
 				style={{ color: darkMode ? '#fff' : '#000' }}
 				className={classes.navContainer}>
 				<span style={{ display: 'flex' }}>
@@ -51,32 +56,28 @@ const NavBar: FC<NavTypes> = () => {
 					<Clock />
 					<Themetoggle />
 				</div>
-			</Link>
+			</a>
 
 			{showLinks && (
-				<>
-					<div
-						className={classes.menuContainer}
-						ref={linksContainerRef}>
-						<ul
-							className={classes.unorderedList}
-							ref={linksRef}>
-							{link.map((link) => {
-								return (
-									<li key={link.id}>
-										<Link
-											className={
-												darkMode ? classes.navLinkDark : classes.navLinkLight
-											}
-											to={link.url}>
-											{link.title}
-										</Link>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				</>
+				<div
+					className={classes.menuContainer}
+					ref={linksContainerRef}>
+					<ul
+						className={classes.unorderedList}
+						ref={linksRef}>
+						{link.map((link) => (
+							<li key={link.id}>
+								<a
+									className={
+										darkMode ? classes.navLinkDark : classes.navLinkLight
+									}
+									href={link.url}>
+									{link.title}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
 			)}
 		</div>
 	);

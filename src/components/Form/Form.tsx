@@ -71,7 +71,9 @@ const Form: React.FC<TextAreaProps> = ({ label, onChange, value = '' }) => {
 	};
 
 	return (
-		<section className={classes.root}>
+		<section
+			className={classes.root}
+			id="contact">
 			<label>{label}</label>
 
 			<form

@@ -11,7 +11,9 @@ const Featured: React.FC = () => {
 	const { darkMode } = useThemeContext();
 
 	return (
-		<section className={classes.root}>
+		<section
+			className={classes.root}
+			id="work">
 			<div className={classes.sectionName}>
 				<p className={classes.header}>Featured Work</p>
 			</div>

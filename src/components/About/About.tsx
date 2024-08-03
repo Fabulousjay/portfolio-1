@@ -11,7 +11,9 @@ const About = () => {
 	const { darkMode } = useThemeContext();
 
 	return (
-		<div className={classes.root}>
+		<div
+			className={classes.root}
+			id="about">
 			<div className={classes.container}>
 				<p className={classes.text}>About</p>{' '}
 				<div

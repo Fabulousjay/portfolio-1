@@ -17,7 +17,9 @@ const Profile = () => {
 	const { darkMode, toggleDarkMode } = useThemeContext();
 
 	return (
-		<div className={classes.root}>
+		<div
+			className={classes.root}
+			id="home">
 			<div className={classes.Container}>
 				<div className={classes.hero}>
 					<div className={classes.headerText}>
@@ -40,13 +42,13 @@ const Profile = () => {
 									wrapper="p"
 									steps={[
 										'Hello guys 👋🏽',
-										3000,
+										5000,
 										"I'm Ayo, a creative Engineer.",
-										3000,
+										5000,
 										'I help brands build creative,',
-										3000,
+										5000,
 										'intuitive and accessible interfaces',
-										4000,
+										6000,
 										'that meet user requirements.',
 									]}
 								/>
@@ -62,7 +64,7 @@ const Profile = () => {
 
 							<button
 								className={darkMode ? classes.buttonDark : classes.buttonLight}>
-								view resume
+								View resume
 							</button>
 						</div>
 						<TextRotation />
