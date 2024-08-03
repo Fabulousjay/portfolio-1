@@ -43,11 +43,13 @@ const NavBar: FC<NavTypes> = () => {
 					{showLinks ? (
 						<Close
 							className={classes.menuIcon}
+							style={{ transform: 'rotate(180deg)' }}
 							onClick={toggleLinks}
 						/>
 					) : (
 						<DragHandle
 							className={classes.menuIcon}
+							style={{ transform: 'rotate(0deg)' }}
 							onClick={toggleLinks}
 						/>
 					)}

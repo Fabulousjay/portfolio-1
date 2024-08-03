@@ -5,7 +5,7 @@ import { NavTypes } from './types';
 export const link: NavTypes[] = [
 	{
 		id: 1,
-		url: '#',
+		url: '/',
 		title: 'Home',
 	},
 	{

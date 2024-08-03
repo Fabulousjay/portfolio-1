@@ -50,7 +50,9 @@ const Contact = () => {
 				style={{ fontSize: '24px' }}>
 				Contact me
 			</div>
-			<div className={classes.container}>
+			<div
+				className={classes.container}
+				id="contact">
 				<p>Got an Idea? Holla at me , let's talk!</p>
 
 				<div className={classes.contactContainer}>

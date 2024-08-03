@@ -11,7 +11,7 @@ const Footer = () => {
 				<div
 					className={classes.footerName}
 					style={{ fontWeight: 'bold' }}>
-					<span style={{ fontSize: '30px' }}>&copy;</span>
+					<span style={{ fontSize: '20px' }}>&copy;</span>
 					<div>
 						<p>Fabulous_jAY 2024</p>
 					</div>

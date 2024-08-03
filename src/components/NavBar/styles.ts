@@ -65,7 +65,11 @@ export const useNavStyles = makeStyles((theme: Theme) => ({
 		display: 'flex',
 		justifyContent: 'center',
 	},
-	menuIcon: { fontSize: '50px !important', cursor: 'pointer' },
+	menuIcon: {
+		fontSize: '50px !important',
+		cursor: 'pointer',
+		transition: 'transform 0.3s ease',
+	},
 	left: {
 		display: 'flex',
 		alignItems: 'center',
