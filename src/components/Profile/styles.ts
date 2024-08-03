@@ -61,6 +61,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 	btn: {
 		display: 'flex',
 		gap: 20,
+
 		[theme.breakpoints.down('sm')]: {
 			justifyContent: 'space-around',
 		},
@@ -70,8 +71,8 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		width: '80%',
 	},
 	buttonDark: {
-		background: theme.design.ayo.waz_black,
-		color: theme.design.ayo.waz_white,
+		color: theme.palette.primary.dark,
+		background: theme.palette.primary.light,
 		border: '2px solid white',
 		transition: '1s',
 		borderRadius: theme.spacing(4),
@@ -91,6 +92,8 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	buttonLight: {
+		color: theme.palette.primary.light,
+		background: theme.palette.primary.dark,
 		border: 'none',
 		transition: '1s',
 		borderRadius: theme.spacing(4),

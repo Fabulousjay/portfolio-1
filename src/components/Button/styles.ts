@@ -16,7 +16,7 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 	},
 
 	button: {
-		border: '1px solid black',
+		border: '1px solid #ffffff',
 		transition: '1s',
 		borderRadius: theme.spacing(4),
 		padding: theme.spacing(1.5, 5),
@@ -27,18 +27,13 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 		color: theme.palette.primary.light,
 		background: theme.palette.primary.dark,
 
-		'&:hover': {
-			color: 'black',
-			background: 'white',
-		},
-
 		[theme.breakpoints.down('sm')]: {
 			width: '170px',
 			fontSize: theme.spacing(1.5),
 		},
 	},
 	buttonLight: {
-		border: '1px solid white',
+		border: '1px solid #121212',
 		transition: '1s',
 		borderRadius: theme.spacing(4),
 		padding: theme.spacing(1.5, 5),
@@ -48,7 +43,6 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 		color: theme.palette.primary.dark,
 		background: theme.palette.primary.light,
 
-		'&:hover': {},
 		[theme.breakpoints.down('sm')]: {
 			padding: theme.spacing(1, 3),
 		},

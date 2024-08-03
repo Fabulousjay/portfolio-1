@@ -55,9 +55,15 @@ const Profile = () => {
 						<div
 							className={classes.btn}
 							style={{ cursor: 'pointer' }}>
-							<button className={classes.buttonLight}>Let's talk</button>
+							<button
+								className={darkMode ? classes.buttonDark : classes.buttonLight}>
+								Let's talk
+							</button>
 
-							<button className={classes.buttonDark}>view resume</button>
+							<button
+								className={darkMode ? classes.buttonDark : classes.buttonLight}>
+								view resume
+							</button>
 						</div>
 						<TextRotation />
 					</div>
