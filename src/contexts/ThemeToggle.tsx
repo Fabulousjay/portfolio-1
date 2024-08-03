@@ -24,7 +24,7 @@ const ThemeToggle: React.FC = () => {
 				{darkMode ? (
 					<DarkModeIcon
 						style={{
-							color: darkMode ? '#fff' : '#000',
+							color: darkMode ? '#ffffff' : '#121212',
 							borderRadius: '50%',
 							fontSize: '20px',
 						}}
@@ -32,6 +32,7 @@ const ThemeToggle: React.FC = () => {
 				) : (
 					<LightModeIcon
 						style={{
+							color: darkMode ? '#121212' : '#ffffff',
 							borderRadius: '50%',
 							fontSize: '20px',
 						}}
