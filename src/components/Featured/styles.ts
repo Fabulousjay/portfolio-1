@@ -38,7 +38,7 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 	},
 	flexContainer: {
 		display: 'grid',
-		gridTemplateColumns: 'refpeat(2, 1fr)',
+		gridTemplateColumns: 'repeat(2, 1fr)',
 		gap: '50px',
 		[theme.breakpoints.down('sm')]: {
 			gridTemplateColumns: 'repeat(1, 1fr)',
