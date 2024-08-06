@@ -27,6 +27,7 @@ const About = () => {
 							style={{
 								color: darkMode ? '#121212' : '#ffffff',
 								background: darkMode ? '#ffffff' : '#000000',
+								cursor: 'pointer',
 							}}
 						/>
 						<DarkButton text="View resume" />

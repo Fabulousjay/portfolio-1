@@ -16,7 +16,7 @@ const Footer = () => {
 						<p>Fabulous_jAY 2024</p>
 					</div>
 				</div>
-				<div className={classes.moreInfo}>Figma Designed by Hamza Abdul </div>
+				<div className={classes.moreInfo}>Built by Adegbulu Ayomiposi </div>
 			</article>
 		</section>
 	);

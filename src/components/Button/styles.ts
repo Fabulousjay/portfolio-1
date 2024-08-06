@@ -35,6 +35,7 @@ export const useButtonStyles = makeStyles((theme: Theme) => ({
 	buttonLight: {
 		border: '1px solid #121212',
 		transition: '1s',
+		cursor: 'pointer',
 		borderRadius: theme.spacing(4),
 		padding: theme.spacing(1.5, 5),
 		fontFamily: theme.design.font.openSans,

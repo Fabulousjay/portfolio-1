@@ -101,6 +101,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		fontFamily: theme.design.font.openSans,
 		fontSize: theme.spacing(2),
 		fontWeight: theme.typography.fontWeightBold,
+		cursor: 'pointer',
 
 		'&:hover': {
 			color: theme.design.ayo.waz_white,

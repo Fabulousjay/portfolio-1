@@ -53,12 +53,16 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 	},
 	image: {
 		width: '500px',
-		height: '380px',
+		maxHeight: '265px',
 		objectFit: 'cover',
+		transition: 'transform 0.3s ease, opacity 0.3s ease',
+		'&:hover': {
+			transform: 'scale(1.05)',
+			opacity: 0.9,
+		},
 		[theme.breakpoints.down('sm')]: {
 			width: '360px',
-			height: ' 236px',
-			objectFit: 'cover',
+			height: '236px',
 		},
 	},
 	projectName: {

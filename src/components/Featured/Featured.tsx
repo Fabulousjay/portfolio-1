@@ -34,14 +34,16 @@ const Featured: React.FC = () => {
 									<a
 										href={url}
 										className={classes.socialLink}
+										target="_blank"
+										rel="noopener noreferrer"
 										style={{ color: darkMode ? '#ffffff' : '#000000' }}>
 										<p className={classes.projectName}>{name}</p>
+										<LightButton
+											text="View Project"
+											className={classes.viewProject}
+										/>
 									</a>
-									<p className={classes.description}>{text}</p>
-									<LightButton
-										text="View Project"
-										className={classes.viewProject}
-									/>
+									{/* <p className={classes.description}>{text}</p> */}
 								</div>
 							</article>
 						</section>
