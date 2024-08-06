@@ -17,7 +17,7 @@ export const useTextRotationStyles = makeStyles((theme: Theme) => ({
 	circle: {
 		position: 'relative',
 		height: '200px',
-		top: '10%',
+		marginTop: '30px',
 		fontWeight: 'normal',
 	},
 	circularText: {

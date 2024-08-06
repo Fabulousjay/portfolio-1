@@ -21,7 +21,6 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 			flexDirection: 'column',
 			maxWidth: 'fit-content',
 			fontWeight: 'bold',
-			marginTop: '36vh',
 		},
 		[theme.breakpoints.down('xs')]: {
 			width: '50vh',
@@ -32,10 +31,11 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 		fontSize: '24px',
 		display: 'flex',
 		justifyContent: 'center',
+		fontWeight: '700',
 	},
 	content: {
-		width: '65%',
-		fontSize: theme.spacing(4),
+		width: '60vw',
+		fontSize: theme.spacing(3.5),
 		marginBottom: '16px',
 		[theme.breakpoints.down('sm')]: {
 			width: '82vw',

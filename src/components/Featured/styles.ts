@@ -11,10 +11,11 @@ import { makeStyles } from '@mui/styles';
 export const useProjectStyles = makeStyles((theme: Theme) => ({
 	root: {
 		display: 'flex',
-		justifyContent: 'space-around',
+		justifyContent: 'space-between',
 		margin: 'auto',
 		paddingTop: '200px',
-		width: '%',
+		width: '90%',
+
 		[theme.breakpoints.down('sm')]: {
 			display: 'block',
 			paddingTop: '5vh',
@@ -43,7 +44,6 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down('sm')]: {
 			gridTemplateColumns: 'repeat(1, 1fr)',
 			gap: '50px',
-			marginLeft: '24px',
 		},
 	},
 	flexItem: {},
@@ -52,7 +52,7 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down('sm')]: {},
 	},
 	image: {
-		width: '500px',
+		width: '30vw',
 		maxHeight: '265px',
 		objectFit: 'cover',
 		transition: 'transform 0.3s ease, opacity 0.3s ease',
@@ -61,7 +61,7 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 			opacity: 0.9,
 		},
 		[theme.breakpoints.down('sm')]: {
-			width: '360px',
+			width: '88vw',
 			height: '236px',
 		},
 	},
