@@ -81,6 +81,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		fontSize: theme.spacing(2),
 		fontWeight: theme.typography.fontWeightBold,
 		cursor: 'pointer',
+		textDecoration: 'none',
 
 		'&:hover': {
 			color: 'black',
@@ -102,6 +103,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		fontSize: theme.spacing(2),
 		fontWeight: theme.typography.fontWeightBold,
 		cursor: 'pointer',
+		textDecoration: 'none',
 
 		'&:hover': {
 			color: theme.design.ayo.waz_white,

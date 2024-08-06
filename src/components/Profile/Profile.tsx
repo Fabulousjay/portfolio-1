@@ -57,15 +57,18 @@ const Profile = () => {
 						<div
 							className={classes.btn}
 							style={{ cursor: 'pointer' }}>
-							<button
+							<a
+								href="#contact"
 								className={darkMode ? classes.buttonDark : classes.buttonLight}>
 								Let's talk
-							</button>
+							</a>
 
-							<button
+							<a
+								href="/Ayo.pdf"
+								download
 								className={darkMode ? classes.buttonDark : classes.buttonLight}>
 								View resume
-							</button>
+							</a>
 						</div>
 						<TextRotation />
 					</div>

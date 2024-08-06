@@ -22,14 +22,14 @@ const About = () => {
 					<p>{description.topParagraph}</p>
 					<p>{description.bottomParagraph}</p>
 					<div className={classes.btnGroup}>
-						<LightButton
-							text="Let's talk"
-							style={{
-								color: darkMode ? '#121212' : '#ffffff',
-								background: darkMode ? '#ffffff' : '#000000',
-								cursor: 'pointer',
-							}}
-						/>
+						<a
+							href="#contact"
+							className={classes.button}>
+							Let's talk{' '}
+						</a>
+						{/* text=""
+							
+						/> */}
 						<DarkButton text="View resume" />
 					</div>
 				</div>

@@ -35,7 +35,7 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 	},
 	content: {
 		width: '65%',
-		fontSize: '40px',
+		fontSize: theme.spacing(4),
 		marginBottom: '16px',
 		[theme.breakpoints.down('sm')]: {
 			width: '82vw',
@@ -43,7 +43,24 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 			textAlign: 'center',
 		},
 	},
+	button: {
+		border: '1px solid #ffffff',
+		transition: '1s',
+		borderRadius: theme.spacing(4),
+		padding: theme.spacing(1.5, 5),
+		fontFamily: theme.design.font.openSans,
+		fontSize: theme.spacing(2),
+		fontWeight: theme.typography.fontWeightBold,
+		cursor: 'pointer',
+		color: theme.palette.primary.light,
+		background: theme.palette.primary.dark,
+		textDecoration: 'none',
 
+		[theme.breakpoints.down('sm')]: {
+			width: '170px',
+			fontSize: theme.spacing(1.5),
+		},
+	},
 	btnGroup: {
 		display: 'flex',
 		gap: 20,
