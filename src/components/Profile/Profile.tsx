@@ -24,7 +24,7 @@ const Profile = () => {
 				<div className={classes.hero}>
 					<div className={classes.headerText}>
 						{' '}
-						Creative Front - End Developer 👨🏾‍💻 .{' '}
+						Creative Software Developer 👨🏾‍💻 .{' '}
 						<div className={classes.typicalText}>
 							<Box
 								sx={{

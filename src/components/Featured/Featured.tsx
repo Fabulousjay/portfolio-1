@@ -43,7 +43,6 @@ const Featured: React.FC = () => {
 											className={classes.viewProject}
 										/>
 									</a>
-									{/* <p className={classes.description}>{text}</p> */}
 								</div>
 							</article>
 						</section>
