@@ -13,7 +13,7 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 		display: 'flex',
 		justifyContent: 'space-between',
 		margin: 'auto',
-		paddingTop: '200px',
+		paddingTop: '64px',
 		width: '90%',
 
 		[theme.breakpoints.down('sm')]: {
@@ -34,7 +34,6 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 			fontSize: '16px',
 			width: '90%',
 			marginBottom: '12px',
-			marginLeft: '24px',
 		},
 	},
 	flexContainer: {
@@ -72,8 +71,8 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 			display: 'flex',
 			justifyContent: 'center',
 			fontSize: '20px',
+			marginTop: '12px',
 
-			margin: 'initial',
 			width: '360px',
 		},
 	},

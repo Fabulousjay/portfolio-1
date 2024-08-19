@@ -14,16 +14,13 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	root: {
-		// height: '100vh',
 		fontFamily: 'Clash Display',
 
 		[theme.breakpoints.down('sm')]: {
 			textAlign: 'center',
-			// height: '75vh',
 		},
 		[theme.breakpoints.down('xs')]: {
 			textAlign: 'center',
-			// height: '90vh',
 		},
 	},
 

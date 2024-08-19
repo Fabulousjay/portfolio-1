@@ -27,7 +27,7 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	text: {
-		paddingTop: '24px',
+		// paddingTop: '24px',
 		fontSize: '24px',
 		display: 'flex',
 		justifyContent: 'center',
