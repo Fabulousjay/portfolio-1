@@ -38,7 +38,6 @@ const Featured: React.FC = () => {
 										rel="noopener noreferrer"
 										style={{ color: darkMode ? '#ffffff' : '#000000' }}>
 										<h4 className={classes.projectName}>{name}</h4>
-									
 										<LightButton
 											text="View Project"
 											className={classes.viewProject}

@@ -51,7 +51,9 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 			gap: '50px',
 		},
 	},
-	flexItem: {},
+	flexItem: {
+	
+	},
 	cardContainer: { [theme.breakpoints.down('sm')]: {} },
 	viewProject: {
 		[theme.breakpoints.down('sm')]: {},

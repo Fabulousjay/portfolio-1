@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.c3878d43.js",
+    "main.js": "/static/js/main.9719248f.js",
     "static/media/mbmc.png": "/static/media/mbmc.2ac96517636d424b0936.png",
-    "static/media/portfolio.png": "/static/media/portfolio.b1eeaad8bbcd90316c7a.png",
     "static/media/kioskhive.png": "/static/media/kioskhive.b23842523a837b8900f6.png",
     "static/media/jay-shop.png": "/static/media/jay-shop.58e72eb8ebd905ebf499.png",
     "static/media/prof-pic.jpg": "/static/media/prof-pic.b644641f14a0367234c1.jpg",
+    "static/media/job_listing.png": "/static/media/job_listing.83093110097643c4d124.png",
     "index.html": "/index.html",
-    "main.c3878d43.js.map": "/static/js/main.c3878d43.js.map"
+    "main.9719248f.js.map": "/static/js/main.9719248f.js.map"
   },
   "entrypoints": [
-    "static/js/main.c3878d43.js"
+    "static/js/main.9719248f.js"
   ]
 }
