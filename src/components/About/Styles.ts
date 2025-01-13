@@ -7,7 +7,6 @@ export const useAboutStyles = makeStyles((theme: Theme) => ({
 	root: {
 		margin: 'auto',
 		justifyContent: 'space-evenly',
-
 		fontFamily: 'Clash display',
 	},
 	container: {

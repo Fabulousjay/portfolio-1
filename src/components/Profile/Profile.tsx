@@ -24,7 +24,7 @@ const Profile = () => {
 				<div className={classes.hero}>
 					<div className={classes.headerText}>
 						{' '}
-						Creative Software Developer 👨🏾‍💻 .{' '}
+						Creative Software Engineer 👨🏾‍💻 .{' '}
 						<div className={classes.typicalText}>
 							<Box
 								sx={{
@@ -64,7 +64,7 @@ const Profile = () => {
 							</a>
 
 							<a
-								href="/Ayo.pdf"
+								href="/Resume.pdf"
 								download
 								className={darkMode ? classes.buttonDark : classes.buttonLight}>
 								View resume

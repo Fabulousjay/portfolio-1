@@ -3,7 +3,6 @@
 import { useAboutStyles } from './Styles';
 import { description } from './Data';
 import { DarkButton } from '../Button/Button';
-import LightButton from '../Button/Button';
 import { useThemeContext } from '../../contexts/ThemeContext';
 
 const About = () => {
@@ -27,9 +26,7 @@ const About = () => {
 							className={classes.button}>
 							Let's talk{' '}
 						</a>
-						{/* text=""
-							
-						/> */}
+						
 						<DarkButton text="View resume" />
 					</div>
 				</div>

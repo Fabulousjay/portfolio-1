@@ -6,7 +6,6 @@
 
 /** @format */
 
-import { ThemeContext } from '@emotion/react';
 import { Theme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
@@ -17,6 +16,7 @@ export const useContactStyles = makeStyles((theme: Theme) => ({
 		justifyContent: 'space-between',
 		margin: 'auto',
 		marginTop: '64px',
+		fontFamily: 'Clash display',
 
 		[theme.breakpoints.down('sm')]: {
 			width: '350px',
@@ -25,6 +25,10 @@ export const useContactStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	contactText: {
+		fontSize: '24px',
+		display: 'flex',
+		justifyContent: 'center',
+		fontWeight: '700',
 		[theme.breakpoints.down('sm')]: {
 			display: 'none',
 		},

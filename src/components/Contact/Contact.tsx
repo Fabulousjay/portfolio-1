@@ -47,13 +47,13 @@ const Contact = () => {
 		<section className={classes.root}>
 			<div
 				className={classes.contactText}
-				style={{ fontSize: '24px' }}>
+				>
 				Contact me
 			</div>
 			<div
 				className={classes.container}
 				id="contact">
-				<p>Got an Idea? Holla at me , let's talk!</p>
+				Got an Idea? Holla at me , let's talk!
 
 				<div className={classes.contactContainer}>
 					<TextArea

@@ -15,7 +15,7 @@ const Featured: React.FC = () => {
 			className={classes.root}
 			id="work">
 			<div className={classes.sectionName}>
-				<p className={classes.header}>Featured Work</p>
+				Featured Work
 			</div>
 			<div className={classes.flexContainer}>
 				{link.map((item) => {
@@ -37,7 +37,8 @@ const Featured: React.FC = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ color: darkMode ? '#ffffff' : '#000000' }}>
-										<p className={classes.projectName}>{name}</p>
+										<h4 className={classes.projectName}>{name}</h4>
+									
 										<LightButton
 											text="View Project"
 											className={classes.viewProject}

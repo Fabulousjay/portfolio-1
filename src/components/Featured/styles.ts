@@ -12,6 +12,7 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 	root: {
 		display: 'flex',
 		justifyContent: 'space-between',
+		fontFamily: 'Clash display',
 		margin: 'auto',
 		paddingTop: '64px',
 		width: '90%',
@@ -22,12 +23,17 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	sectionName: {
+		fontSize: '24px',
+		display: 'flex',
+		justifyContent: 'center',
+		fontWeight: '700',
 		[theme.breakpoints.down('sm')]: {
 			fontWeight: 'bold',
 		},
 	},
 	header: {
 		fontSize: '24px',
+		fontWeight: '700',
 		[theme.breakpoints.down('sm')]: {
 			display: 'flex',
 			justifyContent: 'flex-start',
@@ -65,9 +71,10 @@ export const useProjectStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	projectName: {
-		fontWeight: 'bold',
 		fontSize: '16px',
 		[theme.breakpoints.down('sm')]: {
+			
+		fontWeight: 'bold',
 			display: 'flex',
 			justifyContent: 'center',
 			fontSize: '20px',
