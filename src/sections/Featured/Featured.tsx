@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { link } from './FeaturedData';
-import { useProjectStyles } from './styles';
-import LightButton from '../Button/Button';
 import { useThemeContext } from '../../contexts/ThemeContext';
+import LightButton from '../../components/Button/Button';
+import { useFeaturedStyles } from './styles';
 
 const Featured: React.FC = () => {
-	const classes = useProjectStyles();
+	const classes = useFeaturedStyles();
 	const { darkMode } = useThemeContext();
 
 	return (

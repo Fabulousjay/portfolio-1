@@ -8,14 +8,11 @@ const Footer = () => {
 		<section>
 			<hr className={classes.line} />
 			<article className={classes.container}>
-				<div
-					className={classes.footerName}
-					style={{ fontWeight: 'bold' }}>
-					<span style={{ fontSize: '20px' }}>&copy;</span>
-					<div>
-						<p>Fabulous_jAY 2024</p>
-					</div>
+				<div className={classes.footerName}>
+					<span>&copy;</span>
+					<p>Fabulous_jAY 2024</p>
 				</div>
+
 				<div className={classes.moreInfo}>Built by Adegbulu Ayomiposi </div>
 			</article>
 		</section>

@@ -1,27 +1,6 @@
-/**
- * eslint-disable @typescript-eslint/no-unused-vars
- *
- * @format
- */
-
-/**
- * eslint-disable @typescript-eslint/no-unused-vars
- *
- * @format
- */
-
-/**
- * eslint-disable @typescript-eslint/no-unused-vars
- *
- * @format
- */
-
-/** @format */
-
-import { SetStateAction, useContext, useState } from 'react';
+import {  useState } from 'react';
 import { useContactStyles } from './styles';
-import TextArea from '../Form/Form';
-import { formTypes } from './types';
+import TextArea from '../../components/Form/Form';
 
 const Contact = () => {
 	const classes = useContactStyles();

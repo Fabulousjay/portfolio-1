@@ -11,7 +11,7 @@ const LightButton = (props: any) => {
 	return (
 		<div className={classes.root}>
 			<button className={darkMode ? classes.button : classes.buttonLight}>
-				{props.text}{' '}
+				{props.text}
 			</button>
 		</div>
 	);
@@ -27,7 +27,7 @@ export const DarkButton = (props: any) => {
 	return (
 		<div className={classes.root}>
 			<button className={darkMode ? classes.buttonLight : classes.button}>
-				{props.text}{' '}
+				{props.text}
 			</button>
 		</div>
 	);

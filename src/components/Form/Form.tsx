@@ -4,7 +4,7 @@ import React, { useContext, useRef, useState } from 'react';
 import { useTextAreaStyles } from './styles';
 import { TextareaAutosize } from '@material-ui/core';
 import LightButton from '../Button/Button';
-import { social } from '../Profile/Data';
+import { social } from '../../sections/Profile/Data';
 import { AppTheme } from '../../contexts/AppTheme';
 import emailjs from '@emailjs/browser';
 import { useThemeContext } from '../../contexts/ThemeContext';
@@ -93,13 +93,13 @@ const Form: React.FC<TextAreaProps> = ({ label, onChange, value = '' }) => {
 					placeholder="Email address:"
 				/>
 				<TextareaAutosize
-					className={classes.textArea}
+					className={`${classes.textArea} ${classes.message}`}
 					onChange={(e) => handleChange(e, 'message')}
 					name="message"
-					style={{ minHeight: '500px', border: '1px solid #121212' }}
 					value={message}
 					placeholder="Message:"
 				/>
+
 				<div className={classes.formFooter}>
 					<LightButton text="Send Message" />
 					<section className={classes.linkContainer}>
