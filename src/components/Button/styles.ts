@@ -52,7 +52,7 @@ button: {
 	border:"solid 1px #ffffff",
 
     '&:hover': {
-      color: theme.palette.primary.dark,
+      color: "grey",
     },
 
     [theme.breakpoints.down('sm')]: {

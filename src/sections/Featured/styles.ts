@@ -86,6 +86,23 @@ export const useFeaturedStyles = makeStyles((theme: Theme) => ({
       alignItems: 'center',
     },
   },
+  statusBadge: {
+    display: 'inline-block',
+    backgroundColor: theme.palette.mode === 'dark' ? '#333' : '#e0e0e0',
+    color: theme.palette.mode === 'dark' ? '#fff' : '#333',
+    fontSize: '0.75rem',
+    fontWeight: 500,
+    padding: '4px 8px',
+    borderRadius: '12px',
+    marginTop: theme.spacing(0.5),
+    marginBottom: theme.spacing(1),
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    width: 'fit-content',
+    [theme.breakpoints.down('sm')]: {
+      margin: '0 auto',
+    },
+  },
 
   viewProject: {
     marginTop: theme.spacing(1.5),

@@ -7,5 +7,5 @@ export type ProjectDataTypes = {
 	icon?: JSX.Element;
 	image: string;
 	url: string;
-	header?: string;
+	status:string
 };

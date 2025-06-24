@@ -1,13 +1,15 @@
 /** @format */
 
-import React, { useContext, useRef, useState } from 'react';
+import React, {useRef, useState } from 'react';
 import { useTextAreaStyles } from './styles';
 import { TextareaAutosize } from '@material-ui/core';
 import LightButton from '../Button/Button';
 import { social } from '../../sections/Profile/Data';
-import { AppTheme } from '../../contexts/AppTheme';
 import emailjs from '@emailjs/browser';
 import { useThemeContext } from '../../contexts/ThemeContext';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 interface TextAreaProps {
 	label: string;
@@ -48,27 +50,27 @@ const Form: React.FC<TextAreaProps> = ({ label, onChange, value = '' }) => {
 	const form = useRef<HTMLFormElement>(null);
 
 	const sendEmail = (e: React.FormEvent) => {
-		e.preventDefault();
-		if (form.current) {
-			emailjs
-				.sendForm(
-					'service_8zzl7hm',
-					'template_hex2yqh',
-					form.current,
-					'nyHHQfJq0ChA7-Tot'
-				)
-				.then(
-					() => {
-						console.log('SUCCESS!');
-						alert('Email sent successfully!');
-					},
-					(error) => {
-						console.log('FAILED...', error.text);
-						alert('Email failed to send. Please try again.');
-					}
-				);
-		}
-	};
+	e.preventDefault();
+	if (form.current) {
+		emailjs
+			.sendForm(
+				'service_8zzl7hm',
+				'template_hex2yqh',
+				form.current,
+				'nyHHQfJq0ChA7-Tot'
+			)
+			.then(
+				() => {
+					console.log('SUCCESS!');
+					toast.success('Email sent successfully!');
+				},
+				(error) => {
+					console.error('FAILED...', error.text);
+					toast.error('Email failed to send. Please try again.');
+				}
+			);
+	}
+};
 
 	return (
 		<section className={classes.root}>

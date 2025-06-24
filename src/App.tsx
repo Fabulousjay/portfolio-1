@@ -8,10 +8,15 @@ import Featured from './sections/Featured/Featured';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 export default function App() {
 	return (
+
 		<Router>
 			<div>
 				<NavBar
@@ -24,6 +29,7 @@ export default function App() {
 				<Featured />
 				<Contact />
 				<Footer />
+				<ToastContainer />
 			</div>
 		</Router>
 	);
