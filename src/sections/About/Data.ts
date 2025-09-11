@@ -1,8 +1,6 @@
-/** @format */
-
 export const description = {
-	topParagraph:
-		'As a Software Engineer, I translate innovative designs into stunningly fast and beautiful websites. I provide striking, responsive user interfaces, developing on PHP, Laravel, JavaScript, Next.js, React.js, TypeScript, and Node.js to push the limits of design and functionality.'
-,
-		bottomParagraph:
-		'With experience in project management and code testing, I work together with design-oriented teams to craft websites, microsites, and applications for companies and individuals by assuring the best user experience and performance.'};
+    topParagraph:
+        'I build interactive web applications and immersive 3D experiences with modern tools like React, Next.js, and Three.js. I also create strong backends using PHP/Laravel and Node.js, focusing on fast performance and smooth user interaction.',
+    bottomParagraph:
+        'I use my experience in project management and testing to collaborate with design teams and deliver complete applications. My goal is to build clean, effective systems that provide real value and great user experiences.'
+};

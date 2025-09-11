@@ -33,15 +33,16 @@ const Profile = () => {
                   loop={Infinity}
                   wrapper="p"
                   steps={[
-                    'Hello guys 👋🏽',
-                    5000,
-                    "I'm Ayo, a creative Engineer.",
-                    5000,
-                    'I help brands build creative,',
-                    5000,
-                    'intuitive and accessible interfaces',
-                    6000,
-                    'that meet user requirements.',
+                    'Hello there 👋🏽',
+                    4000,
+                    "I'm Ayo - Software Engineer",
+                    4000,
+                    'I build performant web apps',
+                    4000,
+                    'with React & Three.js',
+                    4000,
+                    'and automate workflows with n8n',
+                    4000,
                   ]}
                 />
               </Box>

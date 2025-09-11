@@ -11,7 +11,7 @@ export const Data =
 export const social = [
 	{
 		id: 1,
-		url: 'https://www.instagram.com/fabulous_jay/',
+		url: 'https://www.linkedin.com/in/adegbulu-ayomiposi/',
 		icon: <ArrowOutwardIcon style={{ fontSize: '24px' }} />,
 		text: 'LI',
 		dash: (
@@ -51,5 +51,3 @@ export const social = [
 	},
 ];
 
-export const profileText =
-	'Hello, I’m Ayo, a creative problem solver that help brands create and accessible interfaces that meet user needs.';
