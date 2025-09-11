@@ -28,7 +28,7 @@ export const useFeaturedStyles = makeStyles((theme: Theme) => ({
   flexContainer: {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
-    gap: theme.spacing(4),
+    gap: theme.spacing(10),
     [theme.breakpoints.down('sm')]: {
       gridTemplateColumns: '1fr',
       gap: theme.spacing(4),
