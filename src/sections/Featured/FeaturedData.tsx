@@ -14,7 +14,7 @@ export const link: ProjectDataTypes[] = [
 		name: 'Hutstack',
 		image: hutstack,
 		text: 'Hutstack is a modern property management platform for landlords, tenants, and vendors. Built an admin dashboard MVP using React, TypeScript, Tailwind, ShadCN UI, Zustand, and Recharts — featuring lease tracking, financial analytics, and reusable components. Also developed a marketing site hosted at x.hutstack.com.',
-		url: 'https://x.hutstack.com',
+		url: 'https://www.hutstack.com',
 		status: 'Production',
 	},
 	{
@@ -27,13 +27,12 @@ export const link: ProjectDataTypes[] = [
 	},
 	{
 		id: 3,
-		name: 'JAY STORE',
+		name: 'Jay Store',
 		image: jay,
 		text: 'Jay Store is a modern e-commerce platform built with React.js, Redux Toolkit, and Tailwind CSS. It includes product listings, category filtering, pagination, and secure authentication, delivering a responsive and user-friendly shopping experience.',
 		url: 'https://fabjay-shop.vercel.app',
 		status: 'Personal Project',
 	},
-
 	{
 		id: 4,
 		name: 'Aura Nimbus Keyboards',
@@ -44,7 +43,7 @@ export const link: ProjectDataTypes[] = [
 	},
 	{
 		id: 5,
-		name: 'KIOSKHIVE',
+		name: 'Kioskhive',
 		image: kioskhive,
 		text: 'Kioskhive is a B2B wholesale marketplace connecting African retailers and manufacturers. I built the backend with Laravel and Livewire, including a multi-step registration, product setup, and MySQL database integration. Deployed on Vercel for testing.',
 		url: 'https://kioskhiveng.vercel.app/',
@@ -52,12 +51,10 @@ export const link: ProjectDataTypes[] = [
 	},
 	{
 		id: 6,
-		name: 'JOBSPHERE',
+		name: 'Jobsphere',
 		image: jobify,
-		text: 'JobSphere is a job board app with full CRUD operations, built with Laravel and SQLite. It supports user authentication, job listing management, and pagination. Designed for easy navigation and clean backend architecture.',
+		text: 'Jobsphere is a job board app with full CRUD operations, built with Laravel and SQLite. It supports user authentication, job listing management, and pagination. Designed for easy navigation and clean backend architecture.',
 		url: 'https://github.com/Fabulousjay/Laravel-Project',
 		status: 'MVP',
 	},
-	
 ];
-
