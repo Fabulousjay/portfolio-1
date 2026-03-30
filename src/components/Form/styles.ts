@@ -64,8 +64,7 @@ export const useTextAreaStyles = makeStyles((theme: Theme) => ({
 		gap: theme.spacing(3),
 
 		[theme.breakpoints.down('sm')]: {
-			flexDirection: 'column',
-			gap: theme.spacing(1),
+			gap: theme.spacing(0),
 		},
 	},
 

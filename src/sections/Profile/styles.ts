@@ -117,8 +117,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     marginTop: theme.spacing(3),
 
     [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column',
-      gap: theme.spacing(2),
+       gap: theme.spacing(1.5),
     },
   },
 
@@ -140,5 +139,24 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     fontSize: '1.125rem',
     fontWeight: 600,
+
+      [theme.breakpoints.down('sm')]: {
+    justifyContent: 'flex-start', 
+    gap: '8px', 
   },
+  },
+
+  dash: {
+  marginLeft: 'auto',
+
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
+  },
+},
+
+// socialInfo: {
+//   width: '100%',
+//   borderBottom: '1px solid rgba(0,0,0,0.1)',
+//   paddingBottom: '8px',
+// },
 }));

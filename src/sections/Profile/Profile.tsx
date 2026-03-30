@@ -87,7 +87,7 @@ const Profile = () => {
                       <p className={classes.infoText}>
                         {text}
                         {icon}
-                        <span style={{ marginRight: '6px' }}>{dash}</span>
+                      <span className={classes.dash}>{dash}</span>
                       </p>
                     </a>
                   </div>
