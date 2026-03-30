@@ -15,7 +15,7 @@ const Profile = () => {
       <div className={classes.Container}>
         <div className={classes.hero}>
 
-          {/* LEFT SIDE */}
+          {/* LEFT */}
           <div className={classes.headerText}>
             Creative Software Engineer 👨🏾‍💻
 
@@ -69,7 +69,7 @@ const Profile = () => {
             <TextRotation />
           </div>
 
-          {/* RIGHT SIDE */}
+          {/* RIGHT */}
           <div className={classes.imgContainer}>
             <img src={Images} className={classes.img} alt="profile" />
 

@@ -2,7 +2,6 @@ import { Theme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 export const useProfileStyles = makeStyles((theme: Theme) => ({
-
   root: {
     fontFamily: 'Clash Display',
     [theme.breakpoints.down('sm')]: {
@@ -26,11 +25,11 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     },
   },
 
-  /* LEFT SIDE */
   headerText: {
     fontSize: '2.2rem',
     fontWeight: 600,
-    width: '50%',
+    width: '45%',
+    paddingTop: '20px',
 
     [theme.breakpoints.down('sm')]: {
       width: '100%',
@@ -42,10 +41,6 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     marginTop: theme.spacing(1),
     fontSize: '1.25rem',
     fontWeight: 400,
-
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '1.1rem',
-    },
   },
 
   btn: {
@@ -70,7 +65,6 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     fontWeight: 600,
     cursor: 'pointer',
     textDecoration: 'none',
-    transition: '0.3s',
 
     '&:hover': {
       background: 'white',
@@ -89,7 +83,6 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     fontWeight: 600,
     cursor: 'pointer',
     textDecoration: 'none',
-    transition: '0.3s',
 
     '&:hover': {
       background: theme.design.ayo.waz_black,
@@ -97,9 +90,9 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     },
   },
 
-  /* RIGHT SIDE */
+  /* RIGHT */
   imgContainer: {
-    width: '50%',
+    width: '55%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -112,22 +105,19 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 
   img: {
     width: '100%',
-    maxWidth: '520px',
-    height: 'auto',
+    height: '460px',
+    objectFit: 'cover',
     display: 'block',
   },
 
   info: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
     width: '100%',
-    maxWidth: '420px',
     marginTop: theme.spacing(3),
 
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
-      alignItems: 'flex-start',
       gap: theme.spacing(2),
     },
   },
@@ -148,13 +138,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
   infoText: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
     fontSize: '1.125rem',
     fontWeight: 600,
-
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '0.95rem',
-    },
   },
-
 }));

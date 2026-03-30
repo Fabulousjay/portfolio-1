@@ -34,20 +34,21 @@ export const link: ProjectDataTypes[] = [
 		url: 'https://www.hivedeck.com',
 		status: 'Production',
 	},
+	
 	{
 		id: 4,
-		name: 'Kioskhive',
-		image: kioskhive,
-		text: 'Built backend APIs for a B2B marketplace using Laravel, enabling scalable product onboarding and improving API performance.',
-		url: 'https://kioskhiveng.vercel.app/',
-		status: 'MVP',
-	},
-	{
-		id: 5,
 		name: 'Aura Nimbus Keyboards',
 		image: nimbusImage,
 		text: 'Developed an interactive 3D e-commerce site with Next.js, Three.js, and Stripe integration, featuring smooth animations and CMS support.',
 		url: 'https://nimbus-keyboards-demo.vercel.app/',
+		status: 'MVP',
+	},
+	{
+		id: 5,
+		name: 'Kioskhive',
+		image: kioskhive,
+		text: 'Built backend APIs for a B2B marketplace using Laravel, enabling scalable product onboarding and improving API performance.',
+		url: 'https://kioskhiveng.vercel.app/',
 		status: 'MVP',
 	},
 	{
@@ -58,12 +59,12 @@ export const link: ProjectDataTypes[] = [
 		url: 'https://fabjay-shop.vercel.app',
 		status: 'Personal Project',
 	},
-	{
-		id: 7,
-		name: 'Jobsphere',
-		image: jobify,
-		text: 'Built a job board with Laravel featuring authentication, CRUD operations, and job management with pagination.',
-		url: 'https://github.com/Fabulousjay/Laravel-Project',
-		status: 'MVP',
-	},
+	// {
+	// 	id: 7,
+	// 	name: 'Jobsphere',
+	// 	image: jobify,
+	// 	text: 'Built a job board with Laravel featuring authentication, CRUD operations, and job management with pagination.',
+	// 	url: 'https://github.com/Fabulousjay/Laravel-Project',
+	// 	status: 'MVP',
+	// },
 ];

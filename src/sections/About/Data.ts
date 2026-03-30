@@ -1,6 +1,6 @@
 export const description = {
     topParagraph:
-        'I build interactive web applications and immersive 3D experiences with modern tools like React, Next.js, and Three.js. I also create strong backends using PHP/Laravel and Node.js, focusing on fast performance and smooth user interaction.',
+        'Software engineer with 5+ years of experience building React and Next.js applications. I have worked across PropTech platforms (property management, lease tracking, financial analytics), no-code website builders serving hundreds of businesses.',
     bottomParagraph:
-        'I use my experience in project management and testing to collaborate with design teams and deliver complete applications. My goal is to build clean, effective systems that provide real value and great user experiences.'
+        'I work deeply in TypeScript, React, and modern UI frameworks. I also build APIs with Laravel and Node.js when needed. My focus is taking complex product requirements and turning them into clean, scalable applications that actually ship.'
 };

@@ -1,6 +1,4 @@
 /** @format */
-
-import InstagramIcon from '@mui/icons-material/Instagram';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import RemoveIcon from '@mui/icons-material/Remove';
