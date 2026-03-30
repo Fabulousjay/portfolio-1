@@ -1,6 +1,6 @@
 import { useProfileStyles } from './styles';
 import Typical from 'react-typical';
-import Images from '../../assets/images/prof-pic.jpg';
+import Images from '../../assets/images/prof-pics.png';
 import { social } from './Data';
 import TextRotation from '../../components/TextRotation/TextRotation';
 import { Box } from '@mui/material';
@@ -14,15 +14,16 @@ const Profile = () => {
     <div className={classes.root} id="home">
       <div className={classes.Container}>
         <div className={classes.hero}>
+
+          {/* LEFT SIDE */}
           <div className={classes.headerText}>
             Creative Software Engineer 👨🏾‍💻
+
             <div className={classes.typicalText}>
               <Box
                 sx={{
                   fontSize: '1.5rem',
                   fontWeight: 400,
-                  position: 'relative',
-                  overflow: 'hidden',
                   width: '100%',
                   '@media (max-width:650px)': {
                     fontSize: '1.25rem',
@@ -47,6 +48,7 @@ const Profile = () => {
                 />
               </Box>
             </div>
+
             <div className={classes.btn}>
               <a
                 href="#contact"
@@ -54,6 +56,7 @@ const Profile = () => {
               >
                 Let's talk
               </a>
+
               <a
                 href="/Resume.pdf"
                 download
@@ -62,11 +65,14 @@ const Profile = () => {
                 View resume
               </a>
             </div>
+
             <TextRotation />
           </div>
 
+          {/* RIGHT SIDE */}
           <div className={classes.imgContainer}>
             <img src={Images} className={classes.img} alt="profile" />
+
             <div className={classes.info}>
               {social.map(({ id, url, icon, text, dash }) => (
                 <section key={id} className={classes.socialInfo}>
@@ -89,6 +95,7 @@ const Profile = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </div>

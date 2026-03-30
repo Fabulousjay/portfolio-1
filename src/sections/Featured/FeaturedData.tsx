@@ -7,53 +7,62 @@ import hivedeck from "../../assets/images/hivedeck.png";
 import jay from '../../assets/images/jay-shop.png';
 import nimbusImage from '../../assets/images/nimbus.png';
 import jobify from '../../assets/images/job_listing.png';
+import vidmetrics from '../../assets/images/vidmetrics.png';
 
 export const link: ProjectDataTypes[] = [
 	{
 		id: 1,
 		name: 'Hutstack',
 		image: hutstack,
-		text: 'Hutstack is a modern property management platform for landlords, tenants, and vendors. Built an admin dashboard MVP using React, TypeScript, Tailwind, ShadCN UI, Zustand, and Recharts — featuring lease tracking, financial analytics, and reusable components. Also developed a marketing site hosted at x.hutstack.com.',
+		text: 'Built a property management platform with React, TypeScript, and Redux, featuring lease tracking, financial analytics, and reusable UI components. Also developed the marketing site.',
 		url: 'https://www.hutstack.com',
 		status: 'Production',
 	},
 	{
 		id: 2,
+		name: 'VidMetrics',
+		image: vidmetrics,
+		text: 'Built a YouTube analytics dashboard in 4 days using Next.js and TypeScript, with a performance scoring engine and real-time insights powered by API and AI-driven analytics.',
+		url: 'https://vidmetric-rho.vercel.app/',
+		status: 'Personal Project',
+	},
+	{
+		id: 3,
 		name: 'Hivedeck',
 		image: hivedeck,
-		text: 'Hivedeck is a no-code website builder designed for small businesses. I contributed to frontend development using React and helped build reusable components and responsive pages for clients to create and launch their websites with ease.',
+		text: 'Contributed to a no-code website builder used by 500+ businesses, building reusable components and responsive templates with React.',
 		url: 'https://www.hivedeck.com',
 		status: 'Production',
 	},
 	{
-		id: 3,
-		name: 'Jay Store',
-		image: jay,
-		text: 'Jay Store is a modern e-commerce platform built with React.js, Redux Toolkit, and Tailwind CSS. It includes product listings, category filtering, pagination, and secure authentication, delivering a responsive and user-friendly shopping experience.',
-		url: 'https://fabjay-shop.vercel.app',
-		status: 'Personal Project',
-	},
-	{
 		id: 4,
-		name: 'Aura Nimbus Keyboards',
-		image: nimbusImage,
-		text: 'Interactive 3D e-commerce site with scroll animations, Stripe payments, and CMS integration. Built with Next.js 15, Three.js, and GSAP.',
-		url: 'https://nimbus-keyboards-demo.vercel.app/',
-		status: 'MVP',
-	},
-	{
-		id: 5,
 		name: 'Kioskhive',
 		image: kioskhive,
-		text: 'Kioskhive is a B2B wholesale marketplace connecting African retailers and manufacturers. I built the backend with Laravel and Livewire, including a multi-step registration, product setup, and MySQL database integration. Deployed on Vercel for testing.',
+		text: 'Built backend APIs for a B2B marketplace using Laravel, enabling scalable product onboarding and improving API performance.',
 		url: 'https://kioskhiveng.vercel.app/',
 		status: 'MVP',
 	},
 	{
+		id: 5,
+		name: 'Aura Nimbus Keyboards',
+		image: nimbusImage,
+		text: 'Developed an interactive 3D e-commerce site with Next.js, Three.js, and Stripe integration, featuring smooth animations and CMS support.',
+		url: 'https://nimbus-keyboards-demo.vercel.app/',
+		status: 'MVP',
+	},
+	{
 		id: 6,
+		name: 'Jay Store',
+		image: jay,
+		text: 'Built an e-commerce app with React and Redux, including product filtering, pagination, and a real-time shopping cart.',
+		url: 'https://fabjay-shop.vercel.app',
+		status: 'Personal Project',
+	},
+	{
+		id: 7,
 		name: 'Jobsphere',
 		image: jobify,
-		text: 'Jobsphere is a job board app with full CRUD operations, built with Laravel and SQLite. It supports user authentication, job listing management, and pagination. Designed for easy navigation and clean backend architecture.',
+		text: 'Built a job board with Laravel featuring authentication, CRUD operations, and job management with pagination.',
 		url: 'https://github.com/Fabulousjay/Laravel-Project',
 		status: 'MVP',
 	},
