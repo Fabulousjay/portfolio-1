@@ -1,11 +1,9 @@
 import { useAboutStyles } from './Styles';
 import { description } from './Data';
-import { useThemeContext } from '../../contexts/ThemeContext';
 import { DarkButton } from '../../components/Button/Button';
 
 const About = () => {
   const classes = useAboutStyles();
-  const { darkMode } = useThemeContext();
 
   return (
     <div className={classes.root} id="about">

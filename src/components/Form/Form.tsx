@@ -7,7 +7,7 @@ import LightButton from '../Button/Button';
 import { social } from '../../sections/Profile/Data';
 import emailjs from '@emailjs/browser';
 import { useThemeContext } from '../../contexts/ThemeContext';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 

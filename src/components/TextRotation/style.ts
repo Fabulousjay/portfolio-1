@@ -1,6 +1,5 @@
 /** @format */
 
-import { Translate } from '@mui/icons-material';
 import { Theme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 

@@ -2,7 +2,6 @@
 
 import { useThemeContext } from '../../contexts/ThemeContext';
 import { useButtonStyles } from './styles';
-import { useContext } from 'react';
 
 const LightButton = (props: any) => {
 	const classes = useButtonStyles();

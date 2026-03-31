@@ -6,7 +6,6 @@ import hutstack from '../../assets/images/hutstack.png';
 import hivedeck from "../../assets/images/hivedeck.png";
 import jay from '../../assets/images/jay-shop.png';
 import nimbusImage from '../../assets/images/nimbus.png';
-import jobify from '../../assets/images/job_listing.png';
 import vidmetrics from '../../assets/images/vidmetrics.png';
 
 export const link: ProjectDataTypes[] = [
@@ -59,12 +58,5 @@ export const link: ProjectDataTypes[] = [
 		url: 'https://fabjay-shop.vercel.app',
 		status: 'Personal Project',
 	},
-	// {
-	// 	id: 7,
-	// 	name: 'Jobsphere',
-	// 	image: jobify,
-	// 	text: 'Built a job board with Laravel featuring authentication, CRUD operations, and job management with pagination.',
-	// 	url: 'https://github.com/Fabulousjay/Laravel-Project',
-	// 	status: 'MVP',
-	// },
+	
 ];
