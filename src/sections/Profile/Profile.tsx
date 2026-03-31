@@ -40,7 +40,7 @@ const Profile = () => {
                     4000,
                     'I build performant web apps',
                     4000,
-                    'with React & Three.js',
+                    'with Javascript frameworks',
                     4000,
                     'and automate workflows with n8n',
                     4000,
