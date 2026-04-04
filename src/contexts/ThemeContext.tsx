@@ -1,44 +1,40 @@
-/** @format */
-import { createContext, useContext, useMemo, useState, ReactNode } from 'react';
-import { darkTheme, lightTheme } from '../theme';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import React, { createContext, useContext, useState } from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { lightTheme, darkTheme } from '../theme';
 
-type ContextProps = {
-	darkMode: boolean;
-	toggleDarkMode: () => void;
+type ThemeContextType = {
+  darkMode: boolean;
+  toggleTheme: () => void;
 };
 
-const CustomThemeContext = createContext<ContextProps | undefined>(undefined);
+const ThemeContext = createContext<ThemeContextType>({
+  darkMode: false,
+  toggleTheme: () => {},
+});
 
-export const useThemeContext = (): ContextProps => {
-	const context = useContext(CustomThemeContext);
-	if (!context) {
-		throw new Error('Error');
-	}
-	return context;
-};
+export const useThemeContext = () => useContext(ThemeContext);
 
-type ThemeContextProviderProps = {
-	children: ReactNode;
-};
+export default function ThemeContextProvider({ children }: { children: React.ReactNode }) {
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    const stored = localStorage.getItem('theme');
+    return stored === 'dark';
+  });
 
-export const ThemeContextProvider = ({
-	children,
-}: ThemeContextProviderProps) => {
-	const [darkMode, setDarkMode] = useState<boolean>(false);
+  const toggleTheme = () => {
+    setDarkMode((prev) => {
+      const newMode = !prev;
+      localStorage.setItem('theme', newMode ? 'dark' : 'light');
+      return newMode;
+    });
+  };
 
-	const toggleDarkMode = () => {
-		setDarkMode((prevMode) => !prevMode);
-	};
-
-	const theme = useMemo(() => (darkMode ? darkTheme : lightTheme), [darkMode]);
-
-	return (
-		<CustomThemeContext.Provider value={{ toggleDarkMode, darkMode }}>
-			<ThemeProvider theme={theme}>
-				<CssBaseline />
-				{children}
-			</ThemeProvider>
-		</CustomThemeContext.Provider>
-	);
-};
+  return (
+    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    </ThemeContext.Provider>
+  );
+}

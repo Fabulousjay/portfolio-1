@@ -9,7 +9,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     },
   },
 
-  Container: {
+  container: {
     margin: 'auto',
     width: '95vw',
   },
@@ -19,7 +19,6 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     gap: theme.spacing(4),
-
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },
@@ -30,7 +29,7 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     fontWeight: 600,
     width: '45%',
     paddingTop: '20px',
-
+    color: theme.palette.text.primary,
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       fontSize: '1.8rem',
@@ -39,25 +38,28 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 
   typicalText: {
     marginTop: theme.spacing(1),
-    fontSize: '1.25rem',
+    fontSize: '1.5rem',
     fontWeight: 400,
+    color: theme.palette.text.secondary,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.25rem',
+    },
   },
 
   btn: {
     display: 'flex',
     gap: theme.spacing(2),
     marginTop: theme.spacing(3),
-
     [theme.breakpoints.down('sm')]: {
       justifyContent: 'center',
       flexWrap: 'wrap',
     },
   },
 
-  buttonDark: {
-    color: theme.palette.primary.dark,
-    background: theme.palette.primary.light,
-    border: '1px solid white',
+  button: {
+    color: theme.palette.background.default,
+    background: theme.palette.text.primary,
+    border: `1px solid ${theme.palette.text.primary}`,
     borderRadius: theme.spacing(1),
     padding: theme.spacing(1, 3),
     fontFamily: theme.design.font.openSans,
@@ -65,38 +67,19 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     fontWeight: 600,
     cursor: 'pointer',
     textDecoration: 'none',
+    transition: 'all 0.3s ease',
 
     '&:hover': {
-      background: 'white',
-      color: 'black',
+      background: theme.palette.background.default,
+      color: theme.palette.text.primary,
     },
   },
 
-  buttonLight: {
-    color: theme.palette.primary.light,
-    background: theme.palette.primary.dark,
-    border: 'none',
-    borderRadius: theme.spacing(1),
-    padding: theme.spacing(1, 3),
-    fontFamily: theme.design.font.openSans,
-    fontSize: '1rem',
-    fontWeight: 600,
-    cursor: 'pointer',
-    textDecoration: 'none',
-
-    '&:hover': {
-      background: theme.design.ayo.waz_black,
-      color: theme.design.ayo.waz_white,
-    },
-  },
-
-  /* RIGHT */
   imgContainer: {
     width: '55%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       marginTop: theme.spacing(4),
@@ -115,9 +98,8 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     width: '100%',
     marginTop: theme.spacing(3),
-
     [theme.breakpoints.down('sm')]: {
-       gap: theme.spacing(1.5),
+      gap: theme.spacing(1.5),
     },
   },
 
@@ -131,7 +113,12 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
 
   url: {
     textDecoration: 'none',
-    color: theme.palette.primary.dark,
+    color: theme.palette.text.primary,
+    transition: 'color 0.3s ease',
+
+    '&:hover': {
+      color: theme.palette.text.secondary,
+    },
   },
 
   infoText: {
@@ -139,24 +126,16 @@ export const useProfileStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     fontSize: '1.125rem',
     fontWeight: 600,
-
-      [theme.breakpoints.down('sm')]: {
-    justifyContent: 'flex-start', 
-    gap: '8px', 
-  },
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: 'flex-start',
+      gap: '8px',
+    },
   },
 
   dash: {
-  marginLeft: 'auto',
-
-  [theme.breakpoints.down('sm')]: {
-    display: 'none',
+    marginLeft: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
-},
-
-// socialInfo: {
-//   width: '100%',
-//   borderBottom: '1px solid rgba(0,0,0,0.1)',
-//   paddingBottom: '8px',
-// },
 }));

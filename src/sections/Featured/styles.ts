@@ -78,9 +78,9 @@ export const useFeaturedStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column',
     marginTop: theme.spacing(1),
-    color: theme.palette.primary.dark,
+      color: theme.palette.text.primary,
     '&:hover': {
-      color: theme.palette.primary.main,
+       color: theme.palette.text.secondary,
     },
     [theme.breakpoints.down('sm')]: {
       alignItems: 'center',

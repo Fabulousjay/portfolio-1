@@ -1,13 +1,11 @@
-/** @format */
-
 import { useNavStyles } from './styles';
 import { link } from './NavData';
 import { FC, useEffect, useRef, useState } from 'react';
 import { Close, DragHandle } from '@mui/icons-material';
 import { NavTypes } from './types';
-import Themetoggle from '../../contexts/ThemeToggle';
 import { useThemeContext } from '../../contexts/ThemeContext';
 import Clock from '../../components/Clock/Clock';
+import ThemeToggle from '../../contexts/ThemeToggle';
 
 const NavBar: FC<NavTypes> = () => {
   const { darkMode } = useThemeContext();
@@ -33,16 +31,14 @@ const NavBar: FC<NavTypes> = () => {
         </div>
 
         <div className={classes.menu}>
-          {showLinks ? (
+          {showLinks ?
             <Close className={classes.menuIcon} onClick={toggleLinks} />
-          ) : (
-            <DragHandle className={classes.menuIcon} onClick={toggleLinks} />
-          )}
+          : <DragHandle className={classes.menuIcon} onClick={toggleLinks} />}
         </div>
 
         <div className={classes.rightItems}>
           <Clock />
-          <Themetoggle />
+          <ThemeToggle />
         </div>
       </div>
 
@@ -56,8 +52,7 @@ const NavBar: FC<NavTypes> = () => {
                   className={
                     darkMode ? classes.navLinkDark : classes.navLinkLight
                   }
-                  onClick={() => setShowLinks(false)} 
-                >
+                  onClick={() => setShowLinks(false)}>
                   {navItem.title}
                 </a>
               </li>
