@@ -11,7 +11,6 @@ const Profile = () => {
     <div className={classes.root} id="home">
       <div className={classes.container}>
         <div className={classes.hero}>
-
           <div className={classes.headerText}>
             Creative Software Engineer 👨🏾‍💻
             <div className={classes.typicalText}>
@@ -36,8 +35,12 @@ const Profile = () => {
               <a href="#contact" className={classes.button}>
                 Let's talk
               </a>
-              <a href="/Resume.pdf" download className={classes.button}>
-                View resume
+              <a
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.button}>
+                View CV
               </a>
             </div>
             <TextRotation />
@@ -65,7 +68,6 @@ const Profile = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </div>

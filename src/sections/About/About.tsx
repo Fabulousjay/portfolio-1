@@ -5,6 +5,13 @@ import { DarkButton } from '../../components/Button/Button';
 const About = () => {
   const classes = useAboutStyles();
 
+  const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/Resume.pdf';
+  link.download = 'Ayo_CV.pdf';
+  link.click();
+};
+
   return (
     <div className={classes.root} id="about">
       <div className={classes.container}>
@@ -16,7 +23,10 @@ const About = () => {
             <a href="#contact" className={classes.button}>
               Let's talk
             </a>
-            <DarkButton text="View resume" />
+            <DarkButton
+              text="Download CV"
+              onClick={handleDownload}
+            />
           </div>
         </div>
       </div>
