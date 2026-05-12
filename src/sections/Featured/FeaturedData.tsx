@@ -14,7 +14,7 @@ export const link: ProjectDataTypes[] = [
 		id: 1,
 		name: 'Zenthom',
 		image: zenthom,
-		text: '',
+		text: 'The professional platform for complete facility maintenance management.',
 		url: 'https://www.zenthom.com',
 	},
 	{
